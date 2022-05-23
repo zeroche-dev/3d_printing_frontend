@@ -1,0 +1,79 @@
+.projects_main_container{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  tr { 
+    transition: 100ms ease-in-out;
+
+      &:hover{
+        transform: scale(1.02);
+        padding: 5px;
+        background-color: rgb(206, 206, 206)!important;
+    }
+  }
+}
+.contact_form_container{
+  height: 85vh;
+  width: 50vw;
+}
+
+.contact_form_information {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: start;
+  span {
+    color: purple;
+    font-weight: bold;
+  }
+}
+
+.contact_form_messenger{
+  width: 100%;
+  height: 600px;
+  background: white;
+  border-radius: 15px;
+  text-align: start;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.status_inline{
+  display: inline-flex;
+  gap: 20px;
+}
+
+
+.contact_form_messenger_chat{
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+@include media('<=big'){
+  .contact_form_container{
+    width: 100vw;
+  }
+  .projects_main_container{
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+}
+
+@include media('<=medium'){
+  .status_inline{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+

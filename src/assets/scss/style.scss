@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------------
+  base SCSS imports
+--------------------------------------------------------------------- */
+
+@import "mixin_media/include_media_values";
+@import "mixin_media/include-media";
+
+
+/*--------------------------------------------------------------------
+  own styles SCSS imports
+--------------------------------------------------------------------- */
+
+@import "main";
+@import "src/sections/Contact/contact";
+@import "src/sections/Login/login_container";
+@import "src/components/MenuHeader/menuHeader";
+@import "src/sections/StepByStep/step_by_step";
+@import "src/components/MainHero/mainHero";
+@import "src/elements/ChatBox/chat_box";
+@import "src/pages/Clientpanel/clientpanel";
+@import "src/pages/Adminpanel/Dashboard/dashboard";
+@import "src/sections/ProjectsTable/projects_table";
+@import "src/pages/Adminpanel/Projects/adminpanel_projects";
+@import "src/sections/Upload/upload";
+@import "src/components/DropZone/dropzone";
+@import "src/elements/MessengerInput/messenger_input";
+@import "src/sections/Gallery/gallery";
+@import 'swiper/swiper';
+@import "src/pages/Adminpanel/GalleryManagement/gallery_management";
+@import "src/sections/Footer/footer";
+@import "src/pages/Adminpanel/Projects/project_list_item";

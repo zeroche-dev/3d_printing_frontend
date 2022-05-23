@@ -1,0 +1,11 @@
+.projects_table_container{
+  width: 50vw;
+  max-height: 85vh;
+}
+
+@include media('<=big'){
+  .projects_table_container{
+    width: 100vw;
+    max-height: 85vh;
+  }
+}

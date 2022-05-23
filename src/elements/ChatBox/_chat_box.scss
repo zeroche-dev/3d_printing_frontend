@@ -1,0 +1,47 @@
+.chat_box_container{
+  width: auto;
+  height: auto;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.chat_box_container img{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.chat_box_{
+  border-radius: 15px;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  color: white;
+  max-width: 55%;
+}
+
+.chat_box_date{
+  padding: 10px;
+}
+
+@include media( '<=medium' ) {
+  .chat_box_{
+    max-width: 75%;
+  }
+
+  .chat_box_container img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+
+}
+
+
+
+
+
+

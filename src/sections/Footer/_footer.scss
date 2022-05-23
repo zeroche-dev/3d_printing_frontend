@@ -1,0 +1,77 @@
+.footer-section
+ {
+     //redundant css in next project will be unified
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+     .footer-triangle {
+        border-style: solid;
+        border-width: 0 0 150px 100vw;
+        border-color: whitesmoke whitesmoke #000000 whitesmoke;
+     }
+     .footer-inner {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         text-align: left;
+         align-items: center;
+        .footer-social
+        {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 0.5em;
+            font-size: 1.8em;
+        }
+        .footer-item 
+        {
+            p{
+                color: rgb(201, 201, 201);
+                line-height: 1.4em;
+                cursor: pointer;
+                user-select: none;
+                transition: all 0.5s ease;
+                &:hover {
+                    color: white;
+                }
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            height: fit-content;
+            display: flex;
+            justify-content: column;
+            color: white!important;
+        }
+     }
+ }
+ @include media('<=medium')
+ {
+    .footer-section
+    {
+        .footer-triangle {
+            display: none;
+        }
+        .footer-inner {
+            margin: 10px;
+            gap: 1em;
+            flex-direction: column;
+            .footer-item 
+            {
+                p{
+                    line-height: 2em;
+                }
+               width: 100%;
+               text-align: center;
+           }
+        }
+    }
+ }

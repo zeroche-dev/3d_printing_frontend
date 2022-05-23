@@ -1,0 +1,39 @@
+
+.dropzone-secton {
+    width: 100%;
+    height: 100%;
+    aside{ 
+        margin-top: 10px;
+        border: 1px solid black;
+        border-radius: 7px;
+        overflow: hidden;
+       
+        padding: 10px;
+        ul {
+                color: rgb(64, 64, 241)
+        }
+    }
+}
+.dropzone
+{
+    height: 300px;
+    width: 100%;
+    border: 2px dashed grey;
+    color: grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    cursor: pointer;
+}
+
+@include media('<=medium')
+{
+    .dropzone
+    {
+        height: fit-content;
+        padding: 10px;
+    }
+}
